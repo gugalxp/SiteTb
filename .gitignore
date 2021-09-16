@@ -1,3 +1,2 @@
-/php
-
-/enviar_email.php
+vendor/
+.env
