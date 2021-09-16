@@ -1,6 +1,6 @@
 <?php
 
-require_once("vendor/autoload.php");
+require('../vendor/autoload.php');
 
   //Variáveis
   $nome = isset($_POST['nome']) ? $_POST['nome'] : 'Não informado';
@@ -97,4 +97,5 @@ if (!$mail->send()) {
 
     echo'Email não enviado: Informar o email e a mensagem.';
   }
+
   ?>
