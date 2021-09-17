@@ -1,6 +1,5 @@
 <?php
-
-require('../vendor/autoload.php');
+require_once("../vendor/autoload.php");
 
   //Variáveis
   $nome = isset($_POST['nome']) ? $_POST['nome'] : 'Não informado';
@@ -9,7 +8,6 @@ require('../vendor/autoload.php');
   $mensagem = isset($_POST['mensagem']) ? $_POST['mensagem'] : 'Não informado';
   $data = date('d/m/Y H:i:s');
   
-
 if($email && $mensagem) {
 
   
@@ -25,8 +23,6 @@ $mail->isSMTP();
 //SMTP::DEBUG_SERVER = client and server messages
 $mail->SMTPDebug = 0;
 
-$SMTPDebug = SMTP::DEBUG_SERVER;
-
 //Set the hostname of the mail server
 $mail->Host = 'smtp.gmail.com';
 //Use `$mail->Host = gethostbyname('smtp.gmail.com');`
@@ -36,12 +32,12 @@ $mail->Host = 'smtp.gmail.com';
 //Set the SMTP port number:
 // - 465 for SMTP with implicit TLS, a.k.a. RFC8314 SMTPS or
 // - 587 for SMTP+STARTTLS
-$mail->Port = 465;
+$mail->Port = 587;
 
 //Set the encryption mechanism to use:
 // - SMTPS (implicit TLS on port 465) or
 // - STARTTLS (explicit TLS on port 587)
-$mail->SMTPSecure = 'ssl';
+$mail->SMTPSecure = 'tls';
 
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;

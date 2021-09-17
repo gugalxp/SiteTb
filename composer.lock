@@ -11,6 +11,7 @@
             "version": "v5.2.28",
             "source": {
                 "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
                 "reference": "acba50393dd03da69a50226c139722af8b153b11"
             },
             "dist": {
