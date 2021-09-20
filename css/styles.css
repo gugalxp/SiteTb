@@ -22,13 +22,9 @@ header, .navbar {
 }
 
 .carousel-caption {
-
-      background-color: rgba(0, 0, 0, 0.315);
-      margin-top: -4rem;
+      margin-top: -5rem;
       margin-bottom: 8rem;
-      
-
-      
+  
 }
 
 
@@ -124,7 +120,12 @@ header, .navbar {
 }
 
 .carousel-indicators .active {
-  background-color: #f1f500;
+  background-color: rgb(255, 0, 0);
+  margin-top: -260rem ;
+}
+.carousel-indicators {
+  margin-bottom:260rem;
+
 }
 
 /* Sobre a empresa */
@@ -472,7 +473,7 @@ header, .navbar {
 
   .carousel-caption h2 {
 
-    margin-bottom: -10rem;
+    margin-top: 5rem;
 
   }
 
@@ -569,6 +570,8 @@ header, .navbar {
     background: 0;
   }
 
+  
+
  .carousel-caption img {
 
   height: 10rem;
@@ -580,6 +583,13 @@ header, .navbar {
   visibility: hidden;
 
 }
+
+.carousel-caption h2 {
+
+  margin-bottom: -2rem;
+
+}
+
 
   /* slider */
   #mainSlider {
@@ -602,6 +612,7 @@ header, .navbar {
   .carousel-caption .main-btn {
     
     font-size: 12px;
+   
   }
 
   /* about */
