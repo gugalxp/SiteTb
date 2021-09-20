@@ -23,8 +23,11 @@ header, .navbar {
 
 .carousel-caption {
 
-      background-color: rgba(204, 2, 2, 0.315);
-      margin-top: 1rem;
+      background-color: rgba(0, 0, 0, 0.315);
+      margin-top: -4rem;
+      margin-bottom: 8rem;
+      
+
       
 }
 
@@ -46,6 +49,12 @@ header, .navbar {
 
 .navbar-brand:hover {
   color: #FFF;
+}
+
+.navbar-toggler{
+
+  background-color: #65DAF9;
+
 }
 
 #navbar-links a {
@@ -78,7 +87,7 @@ header, .navbar {
 #mainSlider .carousel-caption {
   top: 30%;
 }
-#mainSlider .carousel-caption img{
+#mainSlider .carousel-caption img{ 
  margin-top: 10%;
 }
 
@@ -96,7 +105,7 @@ header, .navbar {
 }
 
 .main-btn {
-  background-color: rgb(207, 207, 5);
+  background-color: #28a745;
   color: #FFF;
   text-transform: uppercase;
   width: 200px;
@@ -111,7 +120,7 @@ header, .navbar {
   text-decoration: none;
   color: #FFF;
   background-color: transparent;
-  border-color: rgb(150, 150, 20);
+  border-color: #28a745;
 }
 
 .carousel-indicators .active {
@@ -454,6 +463,25 @@ header, .navbar {
     background: 0;
 
   }
+
+  .carousel-caption img {
+
+    height: 10rem;
+    padding: 0px;
+  }
+
+  .carousel-caption h2 {
+
+    margin-bottom: -10rem;
+
+  }
+
+  
+  .carousel-caption p {
+
+    visibility: hidden;
+
+  }
   
   /* geral */
   .container {
@@ -535,16 +563,22 @@ header, .navbar {
 
 
 @media(max-width: 425px) {
+
   .carousel-caption { 
-
+    margin-top: 2rem;
     background: 0;
-    
-
   }
 
  .carousel-caption img {
 
   height: 10rem;
+}
+
+
+.carousel-caption p {
+
+  visibility: hidden;
+
 }
 
   /* slider */
@@ -558,7 +592,7 @@ header, .navbar {
 
   #mainSlider .carousel-caption h2 {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
 
   #mainSlider .carousel-caption p {
