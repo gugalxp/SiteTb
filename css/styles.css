@@ -18,7 +18,8 @@ p, li {
 
 /* Barra de navegação */
 header, .navbar {
-  background-color: #353D41;
+  background-color: #28a745!important;
+
 }
 
 .carousel-caption {
@@ -49,17 +50,24 @@ header, .navbar {
 
 .navbar-toggler{
 
-  background-color: #65DAF9;
-
+    background-color: yellow;
 }
 
 #navbar-links a {
-  color: rgb(0, 0, 0);
+  color: white;
+  font-weight: 900;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.3rem;
-  opacity: 0.6;  
+  font-size: 1.3rem; 
   transition: all 0.1s;
   cursor: pointer;
+}
+
+#navbar-links a:hover {
+
+    color: #d6d31e;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -116,7 +124,10 @@ header, .navbar {
   text-decoration: none;
   color: #FFF;
   background-color: transparent;
-  border-color: #28a745;
+  background-color: #d6d31e; 
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .carousel-indicators .active {
@@ -209,7 +220,7 @@ header, .navbar {
 }
 
 #data-area p {
-  color: #FFF;
+  color: #212529;
   text-align: center;
   font-size: 26px;
   margin-top: 20px;
@@ -243,7 +254,7 @@ header, .navbar {
 }
 
 #pattern-img h4, #pattern-img p {
-  color: #FFF;
+  color: #212529;
 }
 
 #pattern-img h4 {
@@ -263,13 +274,13 @@ header, .navbar {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  background-color: transparent;
-  border-color: #FFF;
+  border-color: #28a745;
 }
 
 #apply-btn:hover {
-  border-color: #65DAF9;
-  background-color: #65DAF9;
+  border-color: #28a745;
+  background-color: transparent;
+  color: #333;
 }
 
 /* Portfólio */
@@ -458,6 +469,12 @@ header, .navbar {
 
 /* responsive */
 @media(max-width: 768px) {
+
+  .main-btn {
+    
+  background-color: rgb(101, 218, 249);
+  
+  }
 
   .carousel-caption { 
 
