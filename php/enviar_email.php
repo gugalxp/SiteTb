@@ -9,7 +9,6 @@ require_once("../vendor/autoload.php");
   $data = date('d/m/Y H:i:s');
   
 if($email && $mensagem) {
-
   
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
@@ -88,12 +87,15 @@ $mail->Body = "<html>
 if (!$mail->send()) {
     echo 'Email não enviado: ' . $mail->ErrorInfo;
 } else {
-    echo 'Email enviado com sucesso!';
+
+ header('Location: ../email-sent.html');
+ exit;
+  
 }
 
 }else{
 
-    echo'Email não enviado: Informar o email e a mensagem.';
-  }
+echo "informe o email ou a mensagem.";
+}
 
   ?>
