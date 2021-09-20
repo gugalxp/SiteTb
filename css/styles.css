@@ -53,15 +53,8 @@ header, .navbar {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.3rem;
   opacity: 0.6;  
-  transition: all 0.5s;
+  transition: all 0.1s;
   cursor: pointer;
-}
-
-
-#navbar-links a:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  color:rgb(150, 150, 20);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -84,6 +77,9 @@ header, .navbar {
 
 #mainSlider .carousel-caption {
   top: 30%;
+}
+#mainSlider .carousel-caption img{
+ margin-top: 10%;
 }
 
 #mainSlider .carousel-caption h2 {
