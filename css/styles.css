@@ -18,16 +18,8 @@ p, li {
 
 /* Barra de navegação */
 header, .navbar {
-  background-color: #28a745!important;
-
+  background-color: #1a7c22;
 }
-
-.carousel-caption {
-      margin-top: -5rem;
-      margin-bottom: 8rem;
-  
-}
-
 
 #nav-container {
   padding-top: 0;
@@ -35,8 +27,17 @@ header, .navbar {
 }
 
 #logo {
-  width: 80px;
-  margin-left: 1rem;
+  width: 75px;
+  margin-left: 3rem;
+}
+
+.navbar-dark .navbar-toggler-icon {
+
+}
+.navbar-toggler {
+
+background-color: rgb(236, 233, 4);
+border: 2px solid white;
 }
 
 .navbar-brand {
@@ -48,26 +49,18 @@ header, .navbar {
   color: #FFF;
 }
 
-.navbar-toggler{
-
-    background-color: yellow;
-}
-
 #navbar-links a {
-  color: white;
-  font-weight: 900;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.3rem; 
-  transition: all 0.1s;
-  cursor: pointer;
+  color: #FFF;
+  transition: .5s;
 }
 
 #navbar-links a:hover {
 
-    color: #d6d31e;
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
+color: rgb(236, 233, 4);
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -91,9 +84,6 @@ header, .navbar {
 #mainSlider .carousel-caption {
   top: 30%;
 }
-#mainSlider .carousel-caption img{ 
- margin-top: 10%;
-}
 
 #mainSlider .carousel-caption h2 {
   font-size: 50px;
@@ -105,11 +95,10 @@ header, .navbar {
   font-weight: 300;
   margin-bottom: 100px;
   color: #FFF;
-  
 }
 
 .main-btn {
-  background-color: #28a745;
+  background-color: #1a7c22;
   color: #FFF;
   text-transform: uppercase;
   width: 200px;
@@ -124,19 +113,11 @@ header, .navbar {
   text-decoration: none;
   color: #FFF;
   background-color: transparent;
-  background-color: #d6d31e; 
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
+  border-color: rgb(236, 233, 4);
 }
 
 .carousel-indicators .active {
-  background-color: rgb(255, 0, 0);
-  margin-top: -260rem ;
-}
-.carousel-indicators {
-  margin-bottom:260rem;
-
+  background-color: rgb(26, 124, 34);
 }
 
 /* Sobre a empresa */
@@ -152,14 +133,6 @@ header, .navbar {
   text-align: center;
 }
 
-.main-title::after {
-  content: "";
-  border-top: 2px solid #333;
-  width: 15%;
-  position: absolute;
-  top: 60px;
-  left: 42.5%;
-}
 
 .about-title {
   font-size: 17px;
@@ -178,7 +151,7 @@ header, .navbar {
 }
 
 #about-list i {
-  color: #65DAF9;
+  color: rgb(26, 124, 34);
   margin-right: 15px;
 }
 
@@ -205,7 +178,7 @@ header, .navbar {
 }
 
 .service-box:hover > i, .service-box:hover > h4 {
-  color: #65DAF9;
+  color: #1a7c22;
 }
 
 /* Dados */
@@ -220,7 +193,7 @@ header, .navbar {
 }
 
 #data-area p {
-  color: #212529;
+  color: #FFF;
   text-align: center;
   font-size: 26px;
   margin-top: 20px;
@@ -254,7 +227,7 @@ header, .navbar {
 }
 
 #pattern-img h4, #pattern-img p {
-  color: #212529;
+  color: #444;
 }
 
 #pattern-img h4 {
@@ -274,13 +247,13 @@ header, .navbar {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  border-color: #28a745;
+  background-color: transparent;
+  border-color: #FFF;
 }
 
 #apply-btn:hover {
-  border-color: #28a745;
-  background-color: transparent;
-  color: #333;
+  border-color: #1a7c22;
+  background-color: #1a7c22;
 }
 
 /* Portfólio */
@@ -309,8 +282,8 @@ header, .navbar {
 
 #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
   color: #FFF;
-  border: 1px solid #65DAF9;
-  background-color: #65DAF9;
+  border: 1px solid #1a7c22;
+  background-color: #1a7c22;
 }
 
 /* News Letter */
@@ -329,7 +302,7 @@ header, .navbar {
   border-radius: 0;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  border: 1px solid #65DAF9;
+  border: 1px solid #1a7c22;
   display: inline;
   box-sizing: border-box;
   width: 40%;
@@ -339,8 +312,8 @@ header, .navbar {
 #news-btn {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  border: 1px solid #65DAF9;
-  background-color: #65DAF9;
+  border: 1px solid #1a7c22;
+  background-color: #1a7c22;
   color: #FFF;
   text-transform: uppercase;
   height: 40px;
@@ -351,14 +324,14 @@ header, .navbar {
 }
 
 #news-btn:hover {
-  background-color: #FFF;
-  color: #65DAF9;
+  opacity: .6;
+  
 }
 
 /* Call To Action */
 
 #call-area {
-  background-color: #65DAF9;
+  background-color: #1a7c22;
   text-transform: uppercase;
 }
 
@@ -384,7 +357,7 @@ header, .navbar {
 
 #call-area #call-btn {
   background-color: #FFF;
-  color: #65DAF9;
+  color: #1a7c22;
   font-weight: bold;
   margin-left: 30px;
   font-size: 20px;
@@ -401,7 +374,7 @@ header, .navbar {
 .contact-box {
   padding-bottom: 50px;
   margin-bottom: 50px;
-  border-bottom: 1px solid #3EC1D5;
+  border-bottom: 1px solid #1a7c22;
 }
 
 .contact-box i {
@@ -421,7 +394,7 @@ header, .navbar {
 
 .contact-tile {
   font-weight: bold;
-  color: #3EC1D5;
+  color: #1a7c22;
 }
 
 #msg-box p {
@@ -439,7 +412,7 @@ header, .navbar {
 }
 
 #contact-form .main-btn:hover {
-  color: #3EC1D5;
+  color: #1a7c22;
 }
 
 /* Copy */
@@ -464,42 +437,11 @@ header, .navbar {
 
 #copy-area .container a:hover {
   text-decoration: none;
-  color: #3EC1D5;
+  color: #1a7c22;
 }
 
 /* responsive */
-@media(max-width: 768px) {
-
-  .main-btn {
-    
-  background-color: rgb(101, 218, 249);
-  
-  }
-
-  .carousel-caption { 
-
-    background: 0;
-
-  }
-
-  .carousel-caption img {
-
-    height: 10rem;
-    padding: 0px;
-  }
-
-  .carousel-caption h2 {
-
-    margin-top: 5rem;
-
-  }
-
-  
-  .carousel-caption p {
-
-    visibility: hidden;
-
-  }
+@media(max-width: 1000px) {
   
   /* geral */
   .container {
@@ -523,7 +465,6 @@ header, .navbar {
   .carousel-caption {
     left: 10%;
     right: 10%;
-  
   }
   
   /* about */
@@ -582,32 +523,6 @@ header, .navbar {
 
 @media(max-width: 425px) {
 
-  .carousel-caption { 
-    margin-top: 2rem;
-    background: 0;
-  }
-
-  
-
- .carousel-caption img {
-
-  height: 10rem;
-}
-
-
-.carousel-caption p {
-
-  visibility: hidden;
-
-}
-
-.carousel-caption h2 {
-
-  margin-bottom: -2rem;
-
-}
-
-
   /* slider */
   #mainSlider {
     margin-top: 90px;
@@ -619,7 +534,7 @@ header, .navbar {
 
   #mainSlider .carousel-caption h2 {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
 
   #mainSlider .carousel-caption p {
@@ -628,8 +543,7 @@ header, .navbar {
 
   .carousel-caption .main-btn {
     
-    font-size: 12px;
-   
+    font-size: 14px;
   }
 
   /* about */
