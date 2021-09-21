@@ -328,10 +328,14 @@
               <p>Ou nos deixe uma mensagem:</p>
             </div>
             <div class="col-md-6" id="contact-form">
-              <form action="">
-                <input type="text" class="form-control" placeholder="E-mail" name="email">
-                <input type="text" class="form-control" placeholder="Assunto" name="subject">
-                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+
+              <form action="php/enviar_email.php">
+
+                <input type="text" class="form-control" placeholder="Nome" name="nome">
+                <input type="text" class="form-control" placeholder="Email" name="email">
+                <input type="text" class="form-control" placeholder="Assunto" name="assunto">
+
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="messagem"></textarea>
                 <input type="submit" class="main-btn">
               </form>
             </div>
