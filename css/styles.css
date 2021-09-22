@@ -447,6 +447,11 @@ transform: scale(0.8);
   .container {
     padding: 20px 0;
   }
+
+  #logo {
+    width: 65px;
+    margin-left: 0;
+  }
   
   /* slider */
   #mainSlider .carousel-inner, #mainSlider .carousel-item {
