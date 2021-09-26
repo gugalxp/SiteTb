@@ -42,10 +42,10 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = 'curttorock@gmail.com';
+$mail->Username = 'aaaaaaaaaaa';
 
 //Password to use for SMTP authentication
-$mail->Password = 'gugalxp500';
+$mail->Password = 'aaaaaaaaa';
 
 //Set who the message is to be sent from
 //Note that with gmail you can only use your account address (same as `Username`)
@@ -58,7 +58,7 @@ $mail->setFrom($email, $nome);
 //$mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('curttorock@gmail.com', 'ASSUNTO SITE TEMPEROS');
+$mail->addAddress('aaaaaaaaaaaaa', 'ASSUNTO SITE TEMPEROS');
 
 //Set the subject line
 $mail->Subject = $assunto;
