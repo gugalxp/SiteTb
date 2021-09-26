@@ -1,6 +1,8 @@
 /* Gerais */
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #1a7c22;
+
 }
 
 .row {
@@ -44,22 +46,29 @@ border: 2px solid white;
   padding: 0;
   color: #FFF;
 }
+.navbar-dark .navbar-brand {
+
+  color:  rgb(236, 233, 4);
+}
 
 .navbar-brand:hover {
   color: #FFF;
 }
 
 #navbar-links a {
-  color: #FFF;
+  color: rgb(236, 233, 4);
   transition: .5s;
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
 }
 
 #navbar-links a:hover {
 
 color: rgb(236, 233, 4);
--webkit-transform: scale(0.8);
--ms-transform: scale(0.8);
-transform: scale(0.8);
+-webkit-transform: scale(.9);
+-ms-transform: scale(.9);
+transform: scale(.9);
 
 }
 
@@ -74,26 +83,50 @@ transform: scale(0.8);
 /* Slider */
 
 .container-fluid {
+  opacity: .9;
   padding: 0;
 }
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
   height: 90vh;
+  
 }
 
-#mainSlider .carousel-caption {
-  top: 30%;
+.carousel-control-next-icon {
+
+  background-color: rgb(236, 0, 0);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
+
+.carousel-control-prev-icon{
+
+  background-color: rgb(236, 0, 0);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#mainSlider .carousel-caption {
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.342);
+  bottom: 5rem;
+  padding: 2rem;
+ 
+}
+
 
 #mainSlider .carousel-caption h2 {
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: rgb(217, 255, 1);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  margin-top: 1rem;
 }
 
 #mainSlider .carousel-caption p {
   font-size: 22px;
   font-weight: 300;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   color: #FFF;
 }
 
@@ -107,6 +140,7 @@ transform: scale(0.8);
   border-radius: 30px;
   border: 3px solid transparent;
   transition: .5s;
+  z-index: 200%;
 }
 
 .main-btn:hover {
@@ -123,14 +157,17 @@ transform: scale(0.8);
 /* Sobre a empresa */
 
 #about-area {
-  background-color: #F9F9F9;
+  background-color: #fffb01;
 }
 
 .main-title {
-  color: #444;
+  color: #af0404;
   margin: 0 0 65px 0;
   font-size: 40px;
   text-align: center;
+  font-weight: bolder;
+  border-bottom: 2px dashed yellow;
+  padding-bottom: 10px;
 }
 
 
@@ -160,6 +197,13 @@ transform: scale(0.8);
 .service-box {
   text-align: center;
   margin-bottom: 50px;
+  transition: .8s;
+}
+
+.service-box:hover {
+
+  transform: scale(1.1);
+
 }
 
 .service-box i, .service-box h4 {
@@ -169,16 +213,27 @@ transform: scale(0.8);
 .service-box i {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #444;
+  color: #fffb01;
 }
 
 .service-box h4 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #fffb01;
+}
+
+.service-box p {
+
+  color: white;
+}
+
+.service-box p:hover {
+  color: #fffb01;
+
 }
 
 .service-box:hover > i, .service-box:hover > h4 {
-  color: #1a7c22;
+  color: #ffffff;
 }
 
 /* Dados */
@@ -290,7 +345,7 @@ transform: scale(0.8);
 
 #news-area {
   text-align: center;
-  background-color: #F9F9F9;
+  background-color: #fffb01;
 }
 
 #news-area p {
@@ -418,7 +473,7 @@ transform: scale(0.8);
 /* Copy */
 
 #copy-area {
-  background-color: #F1F1F1;
+  background-color: #fffb01;
 }
 
 #copy-area .container {
@@ -441,6 +496,18 @@ transform: scale(0.8);
 }
 
 /* responsive */
+
+@media(max-width: 998px) { 
+
+  #mainSlider .carousel-caption {
+
+    background-color:transparent;
+  
+  }
+
+}
+
+
 @media(max-width: 1000px) {
   
   /* geral */
@@ -472,6 +539,7 @@ transform: scale(0.8);
     right: 10%;
   }
   
+
   /* about */
   #about-area img {
     margin-top: 100px;
