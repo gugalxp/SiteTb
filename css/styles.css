@@ -110,9 +110,10 @@ transform: scale(.9);
 }
 #mainSlider .carousel-caption {
   top: 20%;
-  background-color: rgba(0, 0, 0, 0.911);
+  background-color: rgba(0, 0, 0, 0.507);
   bottom: 5rem;
   padding: 2rem;
+  box-shadow: 0 0 5rem 20px black;
  
 }
 
@@ -120,7 +121,7 @@ transform: scale(.9);
 #mainSlider .carousel-caption h2 {
   font-size: 40px;
   margin-bottom: 50px;
-  color: rgb(217, 255, 1);
+  color: rgb(214, 211, 19);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bolder;
   margin-top: 1rem;
@@ -168,7 +169,7 @@ transform: scale(.9);
 }
 
 .main-title {
-  color: rgb(217, 255, 1);
+  color: rgb(214, 211, 19);
   margin: 0 0 65px 0;
   font-size: 40px;
   text-align: center;
