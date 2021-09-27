@@ -29,7 +29,7 @@
       <!-- add essa class -->
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <a class="navbar-brand" href="index.html">
-          <img id="logo" src="img/hdcagency_logo.png" alt="TEMPEROS TB">TEMPEROS BRITO
+          <img id="logo" src="img/logo.png" alt="Empório Brito">Empório Brito
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,6 @@
         <ol class="carousel-indicators">
           <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
           <li data-target="#mainSlider" data-slide-to="1"></li>
-          <li data-target="#mainSlider" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -61,9 +60,9 @@
             <!-- tirar classe d-none -->
 
             <div class="carousel-caption d-md-block">
-              <h2>Temperos de qualidade máxima!</h5>
-              <p>Conte conosco, dependendo do seu endereço entregamos em sua casa.</p>
-              <p>Ou retire na loja local, localizada la Vila Edna - Guarujá.</p>
+              <img id="logo" src="img/logo.png">
+              <h2>Empório de Temperos e Cereais</h5>
+              <p>Qualidade Máxima!</p>
               <a href="#" class="main-btn">Chamar Agora</a>
             </div>
           </div>
@@ -176,7 +175,6 @@
           </div>
         </div>
       </div>
-       -->
       <div id="team-area">
         <div class="container">
           <div class="row">
@@ -222,55 +220,7 @@
           </div>
         </div>
       </div>
-      <!-- Trabalhe conosco -->
-      <div id="apply-area">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6 apply-box" id="company-img"></div>
-            <div class="col-md-6 apply-box" id="pattern-img">
-              <h4>Gosta de desafios?</h4>
-              <p>Temos várias posições abertas, entre elas: Software Engineer, UI/UX Designer, Project Manager e mais.</p>
-              <p>Clique no botão abaixo e confira os benefícios e as posições em aberto.</p>
-              <p>Aqui você terá a chance de trabalhar com as melhores tecnologias e os profissionais mais capacitados.</p>
-              <a href="#" class="main-btn" id="apply-btn">Saiba Mais</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Portfólio -->
-      <div id="portfolio-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="main-title">Conheça nossos projetos</h3>
-            </div>
-            <div class="col-md-12" id="filter-btn-box">
-              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
-              <button class="main-btn filter-btn" id="dev-btn">Desenvolvimento</button>
-              <button class="main-btn filter-btn" id="dsg-btn">Design</button>
-              <button class="main-btn filter-btn" id="seo-btn">SEO</button>
-            </div>
-            <div class="col-md-4 project-box dev">
-              <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
-            </div>
-            <div class="col-md-4 project-box dsg">
-              <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
-            </div>
-            <div class="col-md-4 project-box seo">
-              <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
-            </div>
-            <div class="col-md-4 project-box dev">
-              <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
-            </div>
-            <div class="col-md-4 project-box dsg">
-              <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
-            </div>
-            <div class="col-md-4 project-box seo">
-              <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
-            </div>
-          </div>
-        </div>
-      </div>
+    -->
       <!-- Newsletter -->
       <div id="news-area">
         <div class="container">
@@ -278,8 +228,8 @@
             <h3 class="main-title">Fique por dentro das novidades</h3>
           </div>
           <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre desenvolvimento de software</p>
-          <form action="">
-            <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+          <form action="php/melhoremail.php">
+            <input type="text" class="form-control" id="email-input" name="melhoremail" placeholder="Seu melhor e-mail">
             <input type="submit" id="news-btn" value="Inscrever">
           </form>
         </div>
@@ -327,7 +277,7 @@
                 <input type="text" class="form-control" placeholder="Email" name="email">
                 <input type="text" class="form-control" placeholder="Assunto" name="assunto">
 
-                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="messagem"></textarea>
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="mensagem"></textarea>
                 <input type="submit" class="main-btn">
               </form>
             </div>

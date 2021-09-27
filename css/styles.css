@@ -1,7 +1,7 @@
 /* Gerais */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #1a7c22;
+  background-color: #ffff;
 
 }
 
@@ -20,7 +20,7 @@ p, li {
 
 /* Barra de navegação */
 header, .navbar {
-  background-color: #1a7c22;
+  background-color: #000000;
 }
 
 #nav-container {
@@ -28,9 +28,10 @@ header, .navbar {
   padding-bottom: 0;
 }
 
-#logo {
-  width: 75px;
+  #logo {
+  width: 55px;
   margin-left: 3rem;
+  margin-right: 5px;
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -157,17 +158,19 @@ transform: scale(.9);
 /* Sobre a empresa */
 
 #about-area {
-  background-color: #fffb01;
+  background-color: #ffff;
 }
 
 .main-title {
-  color: #af0404;
+  color: white;
   margin: 0 0 65px 0;
   font-size: 40px;
   text-align: center;
   font-weight: bolder;
-  border-bottom: 2px dashed yellow;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  box-shadow: 0 20px 10rem 20px rgba(25, 214, 18, 0.247);
   padding-bottom: 10px;
+  background-color: #444;
 }
 
 
@@ -203,6 +206,8 @@ transform: scale(.9);
 .service-box:hover {
 
   transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.226);
+  padding-top: 10px;
 
 }
 
@@ -213,13 +218,15 @@ transform: scale(.9);
 .service-box i {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #fffb01;
+  color: #444;
+
 }
 
 .service-box h4 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #fffb01;
+  color: #444;
+
 }
 
 .service-box p {
@@ -345,7 +352,7 @@ transform: scale(.9);
 
 #news-area {
   text-align: center;
-  background-color: #fffb01;
+  background-color: #ffff;
 }
 
 #news-area p {
@@ -434,7 +441,7 @@ transform: scale(.9);
 
 .contact-box i {
   color: #444;
-  border: solid 1px #444;
+  border: solid 1px white;
   border-radius: 50%;
   width: 55px;
   height: 55px;
@@ -445,6 +452,7 @@ transform: scale(.9);
 
 .contact-box p {
   font-size: 16px;
+  color: #444;
 }
 
 .contact-tile {
@@ -453,7 +461,8 @@ transform: scale(.9);
 }
 
 #msg-box p {
-  font-size: 22px;
+  font-size: 26px;
+  color: #444;
 }
 
 #contact-form input[type="text"], #contact-form textarea {
@@ -518,6 +527,7 @@ transform: scale(.9);
   #logo {
     width: 65px;
     margin-left: 0;
+    padding: 0;
   }
   
   /* slider */
@@ -595,6 +605,12 @@ transform: scale(.9);
 
 
 @media(max-width: 425px) {
+
+  #logo { 
+
+    width: 40px;
+
+  }
 
   /* slider */
   #mainSlider {

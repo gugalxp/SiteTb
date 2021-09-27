@@ -2,13 +2,10 @@
 require_once("../vendor/autoload.php");
 
   //Variáveis
-  $nome = isset($_POST['nome']) ? $_POST['nome'] : 'Não informado';
-  $email = isset($_POST['email']) ? $_POST['email'] : 'Não informado';
-  $assunto = isset($_POST['assunto']) ? $_POST['assunto'] : 'Não informado';
-  $mensagem = isset($_POST['mensagem']) ? $_POST['mensagem'] : 'Não informado';
+  $melhoremail = isset($_POST['melhoremail']) ? $_POST['melhoremail'] : 'Não informado';
   $data = date('d/m/Y H:i:s');
   
-if($email && $mensagem) {
+if($melhoremail) {
   
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
@@ -31,7 +28,7 @@ $mail->Host = 'smtp.gmail.com';
 //Set the SMTP port number:
 // - 465 for SMTP with implicit TLS, a.k.a. RFC8314 SMTPS or
 // - 587 for SMTP+STARTTLS
-$mail->Port = 587;
+$mail->Port = 465;
 
 //Set the encryption mechanism to use:
 // - SMTPS (implicit TLS on port 465) or
@@ -47,27 +44,13 @@ $mail->Username = 'curttorock@gmail.com';
 //Password to use for SMTP authentication
 $mail->Password = 'gugalxp500';
 
-//Set who the message is to be sent from
-//Note that with gmail you can only use your account address (same as `Username`)
-//or predefined aliases that you have configured within your account.
-//Do not use user-submitted addresses in here
-$mail->setFrom($email, $nome);
-
-//Set an alternative reply-to address
-//This is a good place to put user-submitted addresses
-//$mail->addReplyTo('replyto@example.com', 'First Last');
-
-//Set who the message is to be sent to
-$mail->addAddress('curttorock@gmail.com', 'MENSAGEM SITE TEMPEROS');
+$mail->addAddress('curttorock@gmail.com', 'MELHOR E-MAIL SITE TEMPEROS');
 
 //Set the subject line
-$mail->Subject = $assunto;
+$mail->Subject = "MELHOR E-MAIL";
 $mail->isHTML(true);
 $mail->Body = "<html>
-<b>Nome: </b>{$nome}<br> 
-<b>E-mail: </b>{$email}<br>
-<b>Assunto: </b>{$assunto}<br>
-<b>Mensagem: </b>{$mensagem}<br><br> 
+<b>Melhor E-mail: </b>{$melhoremail}<br>
 <b>{$data}</b>
 </html>
 ";
@@ -93,9 +76,6 @@ if (!$mail->send()) {
   
 }
 
-}else{
-
-echo "informe o email ou a mensagem.";
 }
 
   ?>
