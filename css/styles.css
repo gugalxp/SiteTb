@@ -95,20 +95,22 @@ transform: scale(.9);
 
 .carousel-control-next-icon {
 
-  background-color: rgb(236, 0, 0);
+  background-color: rgb(217, 255, 1);
+
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .carousel-control-prev-icon{
 
-  background-color: rgb(236, 0, 0);
+  background-color: rgb(217, 255, 1);
+
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 #mainSlider .carousel-caption {
   top: 20%;
-  background-color: rgba(0, 0, 0, 0.342);
+  background-color: rgba(0, 0, 0, 0.911);
   bottom: 5rem;
   padding: 2rem;
  
@@ -119,20 +121,22 @@ transform: scale(.9);
   font-size: 40px;
   margin-bottom: 50px;
   color: rgb(217, 255, 1);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bolder;
   margin-top: 1rem;
 }
 
 #mainSlider .carousel-caption p {
-  font-size: 22px;
-  font-weight: 300;
+  font-size: 25px;
+  font-weight: bolder;
   margin-bottom: 50px;
-  color: #FFF;
+  color: rgb(243, 243, 243);
+  font-style: italic;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-btn {
-  background-color: #1a7c22;
+  background-color: black;
   color: #FFF;
   text-transform: uppercase;
   width: 200px;
@@ -140,19 +144,21 @@ transform: scale(.9);
   padding: 10px 20px;
   border-radius: 30px;
   border: 3px solid transparent;
+  border-color: rgb(236, 233, 4);
   transition: .5s;
   z-index: 200%;
+  margin-top: 2rem;
 }
 
 .main-btn:hover {
   text-decoration: none;
-  color: #FFF;
-  background-color: transparent;
-  border-color: rgb(236, 233, 4);
+ opacity: .5;
+ color: white;
 }
 
-.carousel-indicators .active {
+.carousel-indicators{
   background-color: rgb(26, 124, 34);
+  visibility: hidden;
 }
 
 /* Sobre a empresa */
@@ -162,15 +168,15 @@ transform: scale(.9);
 }
 
 .main-title {
-  color: white;
+  color: rgb(217, 255, 1);
   margin: 0 0 65px 0;
   font-size: 40px;
   text-align: center;
   font-weight: bolder;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  box-shadow: 0 20px 10rem 20px rgba(25, 214, 18, 0.247);
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 0 0 5rem 20px rgba(0, 0, 0, 0.247);
   padding-bottom: 10px;
-  background-color: #444;
+  background-color: rgb(34, 34, 34);
 }
 
 
@@ -231,17 +237,9 @@ transform: scale(.9);
 
 .service-box p {
 
-  color: white;
+  color: #444;
 }
 
-.service-box p:hover {
-  color: #fffb01;
-
-}
-
-.service-box:hover > i, .service-box:hover > h4 {
-  color: #ffffff;
-}
 
 /* Dados */
 
@@ -540,7 +538,7 @@ transform: scale(.9);
   }
 
   #mainSlider .carousel-caption p {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 40px;
   }
 
@@ -606,11 +604,17 @@ transform: scale(.9);
 
 @media(max-width: 425px) {
 
+  #mainSlider .carousel-caption {
+  
+    margin-top: -2rem;
+  }
+
   #logo { 
 
-    width: 40px;
+    width: 65px;
 
   }
+
 
   /* slider */
   #mainSlider {
