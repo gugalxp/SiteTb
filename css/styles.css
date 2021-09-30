@@ -215,18 +215,16 @@ text-decoration: none;
 
 .service-box {
   text-align: center;
-  display: inline-flexbox;
-  justify-content: center;
   justify-content: space-evenly;
- 
+  
 }
 
 .btn-primary{
 
-display:flexbox;
 background-color: #000000;
 font-size: 18px;
 justify-content: space-evenly;
+margin-bottom: 1rem;
 
 }
 
