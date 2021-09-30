@@ -16,6 +16,7 @@
   crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
   <!-- Progress Bar -->
@@ -113,7 +114,7 @@
                   <p style="color:rgb(241, 241, 241); margin-top:2rem; background-color: black; padding: 1rem 1rem;">E MUITO MAIS! Consulte se o tempero que você <strong>precisa</strong> tem disponível na nossa loja através do <a href="url">Nosso WhatsApp!</a> Faça a sua encomenda <a href="url"> CLICANDO AQUI!</a></p>
                 <br>
                   <h3 class="about-title" style="margin-bottom:1rem;">Pães quentinhos E INTEGRAIS!</h3>
-
+                  
                   <ul id="about-list">
                     <li><i class="fas fa-check"></i>Pães INTEGRAIS de BATATA DOCE!</li>
                     <li><i class="fas fa-check"></i>Pães INTEGRAIS TRADICIONAIS!</li>
@@ -121,62 +122,48 @@
                     <li><i class="fas fa-check"></i>Pães INTEGRAIS recheado com QUEIJO, tomate e oregano c/ BRÓCOLIS!</li>
                     <p  style="text-align:center; margin-top:1rem;">Paça seu gosto! Encomende um pão de acordo com o que você gosta!</p>
                     <p style="color: #007bff; padding:1rem 1rem; background:black;">Detalhe: Não trabalhamos com nada relacionado a carne de porco!</p>
-                </ul>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-      </div>
-      <!-- Serviços da empresa -->
-      <div id="services-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-                <h3 class="main-title">Nossas especialidades</h3>
+          <!-- Serviços da empresa -->
+          <div id="services-area">
+            
+            <div class="service-box">
+        <p><a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Somos especialistas!</a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Aceitamos encomendas!</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#contact-area" aria-expanded="false" aria-controls="contact-area">Contato</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
             </div>
-            <div class="col-md-4 service-box">
-              <i class="fas fa-mobile-alt"></i>
-              <h4>Aplicativos Nativos</h4>
-              <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
-            </div>
-            <div class="col-md-4 service-box">
-              <i class="fas fa-shopping-cart"></i>
-              <h4>E-commerces</h4>
-              <p>Temos uma plataforma própria de e-commerce que se adapta a qualquer regra de negócio (B2C e B2B).</p>
-            </div>
-            <div class="col-md-4 service-box">
-              <i class="fas fa-paint-brush"></i>
-              <h4>Design Criativo</h4>
-              <p>Nossos designers são especializados em UI/UX e também possuem vasta experiência no mercado de software.</p>
-            </div>
-            <div class="col-md-4 service-box">
-              <i class="fab fa-google"></i>
-              <h4>Experts em SEO</h4>
-              <p>Com nosso serviço de marketing seu site será melhor posicionado no Google e venderá mais.</p>
-            </div>
-            <div class="col-md-4 service-box">
-              <i class="fas fa-hands-helping"></i>
-              <h4>Suporte 24/7</h4>
-              <p>Você sempre terá alguem da equipe disponível para suporte, em diferentes plataformas. (chat, email, skype)</p>
-            </div>
-            <div class="col-md-4 service-box">
-              <i class="fas fa-server"></i>
-              <h4>Experiência em servidores</h4>
-              <p>Garantimos uptime e também rápido tempo de resposta do seu site para o seu cliente.</p>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
             </div>
           </div>
         </div>
+        </div>
       </div>
       <!-- Dados da empresa 
-      <div id="data-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 col-xs-6 circle-box">
-              <div id="circleA"></div>
-              <p>Projetos entregues</p>
-            </div>
-            <div class="col-md-3 col-xs-6 circle-box">
-              <div id="circleB"></div>
-              <p>Clientes Felizes</p>
+        <div id="data-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-xs-6 circle-box">
+                <div id="circleA"></div>
+                <p>Projetos entregues</p>
+              </div>
+              <div class="col-md-3 col-xs-6 circle-box">
+                <div id="circleB"></div>
+                <p>Clientes Felizes</p>
             </div>
             <div class="col-md-3 col-xs-6 circle-box">
               <div id="circleC"></div>
@@ -260,7 +247,8 @@
       -->
   <!-- Rodapé -->
   <footer>
-    <div id="contact-area">
+    <div class="collapse multi-collapse" id="contact-area">
+
       <div class="container">
           <div class="row">
             <div class="col-md-12">

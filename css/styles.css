@@ -106,10 +106,7 @@ transform: scale(.9);
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-#mainSlider {
 
-    background-color: rgba(0, 0, 0, 0.507);
-}
 #mainSlider .carousel-caption {
   top: 30%;
   background-color: rgba(0, 0, 0, 0.507);
@@ -218,42 +215,20 @@ text-decoration: none;
 
 .service-box {
   text-align: center;
-  margin-bottom: 50px;
-  transition: .8s;
-  
+  display: inline-flexbox;
+  justify-content: center;
+  justify-content: space-evenly;
+ 
 }
 
-.service-box:hover {
+.btn-primary{
 
-  transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.226);
-  padding-top: 10px;
-
-}
-
-.service-box i, .service-box h4 {
-  transition: .5s;
-}
-
-.service-box i {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #444;
+display:flexbox;
+background-color: #000000;
+font-size: 18px;
+justify-content: space-evenly;
 
 }
-
-.service-box h4 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #444;
-
-}
-
-.service-box p {
-
-  color: #444;
-}
-
 
 /* Dados */
 
@@ -520,17 +495,6 @@ text-decoration: none;
 
 /* responsive */
 
-@media(max-width: 998px) { 
-
-  #mainSlider .carousel-caption {
-
-
-  
-  }
-
-}
-
-
 @media(max-width: 1000px) {
   
   /* geral */
@@ -619,7 +583,6 @@ text-decoration: none;
 @media(max-width: 890px) {
   #mainSlider .carousel-caption {
     top: 22%;
-    background-color: rgba(0, 0, 0, 0.507);
     box-shadow: 0 0 5rem 20px black;
     bottom: 1rem;
     padding-top: -1rem;
