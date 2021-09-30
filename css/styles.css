@@ -95,21 +95,25 @@ transform: scale(.9);
 
   background-color: rgb(217, 255, 1);
 
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .carousel-control-prev-icon{
 
   background-color: rgb(217, 255, 1);
 
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#mainSlider {
+
+    background-color: rgba(0, 0, 0, 0.507);
 }
 #mainSlider .carousel-caption {
-  top: 20%;
+  top: 30%;
   background-color: rgba(0, 0, 0, 0.507);
-  bottom: 5rem;
+  bottom: 3rem;
   padding: 2rem;
   box-shadow: 0 0 5rem 20px black;
  
@@ -135,8 +139,8 @@ transform: scale(.9);
 }
 
 .main-btn {
-  background-color:rgb(236, 233, 4);
-  color:rgb(0, 0, 0);
+  background-color:rgb(214, 211, 19);
+  color:rgb(255, 255, 255);
   text-transform: uppercase;
   width: 200px;
   height: 60px;
@@ -144,15 +148,16 @@ transform: scale(.9);
   border-radius: 30px;
   transition: .5s;
   margin-top: 2rem;
-  transition: .8s;
+  transition: .1s;
+  box-shadow: 0 0 .7rem 5px rgb(214, 211, 19);
+  border-style: hidden;
 
 }
 
 .main-btn:hover {
 text-decoration: none;
- border: 8px solid black;
- color: white;
  opacity: .9;
+ color: white;
  
 }
 
@@ -205,10 +210,17 @@ text-decoration: none;
 
 /* Serviços */
 
+#services-area {
+
+  background-color: #ffff;
+
+}
+
 .service-box {
   text-align: center;
   margin-bottom: 50px;
   transition: .8s;
+  
 }
 
 .service-box:hover {
@@ -431,6 +443,8 @@ text-decoration: none;
 
 #contact-area {
   text-align: center;
+  background-color: #ffff;
+
 }
 
 .contact-box {
@@ -457,7 +471,7 @@ text-decoration: none;
 
 .contact-tile {
   font-weight: bold;
-  color: #1a7c22;
+  color: #007bff;
 }
 
 #msg-box p {
@@ -510,8 +524,7 @@ text-decoration: none;
 
   #mainSlider .carousel-caption {
 
-    background-color:transparent;
-    box-shadow: 0 0 0 0 transparent;
+
   
   }
 
@@ -603,6 +616,56 @@ text-decoration: none;
   }
 
 }
+@media(max-width: 890px) {
+  #mainSlider .carousel-caption {
+    top: 22%;
+    background-color: rgba(0, 0, 0, 0.507);
+    box-shadow: 0 0 5rem 20px black;
+    bottom: 1rem;
+    padding-top: -1rem;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+
+  #mainSlider .carousel-caption p {
+visibility: visible;
+  }
+
+  .carousel-caption .main-btn {
+    
+    font-size: 16px;
+  }
+
+}
+
+@media(max-width: 627px) {
+  #mainSlider .carousel-caption {
+    top: 22%;
+    background-color: rgba(0, 0, 0, 0.507);
+    box-shadow: 0 0 5rem 20px black;
+    bottom: 1rem;
+    padding-top: -1rem;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 18px;
+    margin-bottom: -25px;
+  }
+
+  #mainSlider .carousel-caption p {
+visibility: hidden;
+font-size: 15px;
+  }
+
+  .carousel-caption .main-btn {
+    
+    font-size: 16px;
+  }
+
+}
 
 
 @media(max-width: 425px) {
@@ -621,16 +684,21 @@ text-decoration: none;
 
   /* slider */
   #mainSlider {
-    margin-top: 90px;
+    margin-top: 82px;
   }
 
   #mainSlider .carousel-caption {
-    top: 5%;
+    top: 22%;
+    background-color: rgba(0, 0, 0, 0.507);
+    box-shadow: 0 0 5rem 20px black;
+    bottom: 1rem;
+    padding-top: -1rem;
   }
 
   #mainSlider .carousel-caption h2 {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: -11px;
   }
 
   #mainSlider .carousel-caption p {
