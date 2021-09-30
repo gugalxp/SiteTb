@@ -29,14 +29,12 @@ header, .navbar {
 }
 
   #logo {
-  width: 55px;
+  width: 70px;
   margin-left: 3rem;
   margin-right: 5px;
+  object-fit: cover;
 }
 
-.navbar-dark .navbar-toggler-icon {
-
-}
 .navbar-toggler {
 
 background-color: rgb(236, 233, 4);
@@ -137,24 +135,25 @@ transform: scale(.9);
 }
 
 .main-btn {
-  background-color: black;
-  color: #FFF;
+  background-color:rgb(236, 233, 4);
+  color:rgb(0, 0, 0);
   text-transform: uppercase;
   width: 200px;
   height: 60px;
   padding: 10px 20px;
   border-radius: 30px;
-  border: 3px solid transparent;
-  border-color: rgb(236, 233, 4);
   transition: .5s;
-  z-index: 200%;
   margin-top: 2rem;
+  transition: .8s;
+
 }
 
 .main-btn:hover {
-  text-decoration: none;
- opacity: .5;
+text-decoration: none;
+ border: 8px solid black;
  color: white;
+ opacity: .9;
+ 
 }
 
 .carousel-indicators{
@@ -174,10 +173,12 @@ transform: scale(.9);
   font-size: 40px;
   text-align: center;
   font-weight: bolder;
-  border: 2px solid rgb(0, 0, 0);
-  box-shadow: 0 0 5rem 20px rgba(0, 0, 0, 0.247);
-  padding-bottom: 10px;
-  background-color: rgb(34, 34, 34);
+  border-bottom: 3px solid rgb(214, 211, 19);
+  border-left: 3px solid rgb(214, 211, 19);
+  border-right: 3px solid rgb(214, 211, 19);
+  padding: 10px 10px;
+  background-color:black;
+  transition: .6s;
 }
 
 
