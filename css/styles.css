@@ -1,7 +1,7 @@
 /* Gerais */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffff;
+  background-image: linear-gradient(180deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
 
 }
 
@@ -14,13 +14,14 @@ body {
 }
 
 p, li {
-  color: #444;
+  color: #ffff;
   font-size: 14px;
 }
 
 /* Barra de navegação */
 header, .navbar {
-  background-color: #000000;
+  background-image: linear-gradient(180deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
+  border-bottom: 2px solid #0a3d30;
 }
 
 #nav-container {
@@ -113,7 +114,8 @@ transform: scale(.9);
   bottom: 3rem;
   padding: 2rem;
   box-shadow: 0 0 5rem 20px black;
- 
+ border: 1px solid linear-gradient(180deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
+
 }
 
 
@@ -136,8 +138,8 @@ transform: scale(.9);
 }
 
 .main-btn {
-  background-color:rgb(214, 211, 19);
-  color:rgb(255, 255, 255);
+  background-color: #0a3d30;
+  color:rgb(236, 233, 4);
   text-transform: uppercase;
   width: 200px;
   height: 60px;
@@ -146,7 +148,6 @@ transform: scale(.9);
   transition: .5s;
   margin-top: 2rem;
   transition: .1s;
-  box-shadow: 0 0 .7rem 5px rgb(214, 211, 19);
   border-style: hidden;
 
 }
@@ -154,8 +155,7 @@ transform: scale(.9);
 .main-btn:hover {
 text-decoration: none;
  opacity: .9;
- color: white;
- 
+ color: rgb(214, 211, 19);
 }
 
 .carousel-indicators{
@@ -165,7 +165,7 @@ text-decoration: none;
 
 /* Sobre a empresa */
 
-#about-area {
+  .about-area {
   background-color: #ffff;
 }
 
@@ -179,14 +179,14 @@ text-decoration: none;
   border-left: 3px solid rgb(214, 211, 19);
   border-right: 3px solid rgb(214, 211, 19);
   padding: 10px 10px;
-  background-color:black;
+  background-image: linear-gradient(180deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
   transition: .6s;
 }
 
 
 .about-title {
   font-size: 17px;
-  color: #444;
+  color: rgb(236, 233, 4);
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -201,7 +201,7 @@ text-decoration: none;
 }
 
 #about-list i {
-  color: rgb(26, 124, 34);
+  color: #0a3d30;
   margin-right: 15px;
 }
 
@@ -209,7 +209,7 @@ text-decoration: none;
 
 #services-area {
 
-  background-color: #ffff;
+  background-color: #0a3d30;
 
 }
 
@@ -219,12 +219,20 @@ text-decoration: none;
   
 }
 
-.btn-primary{
-
-background-color: #000000;
+.btn-colapso{
+background-color: rgb(10, 61, 48);
 font-size: 18px;
 justify-content: space-evenly;
-margin-bottom: 1rem;
+margin-top: 1rem;
+color: rgb(236, 233, 4);
+border: 1px solid #1a7c22;
+
+
+}
+
+.btn-colapso:hover{
+  background-color: rgb(10, 61, 48);
+  color: rgb(161, 159, 7);
 
 }
 
@@ -416,7 +424,7 @@ margin-bottom: 1rem;
 
 #contact-area {
   text-align: center;
-  background-color: #ffff;
+  background-image: linear-gradient(180deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
 
 }
 
@@ -427,7 +435,7 @@ margin-bottom: 1rem;
 }
 
 .contact-box i {
-  color: #444;
+  color: white;
   border: solid 1px white;
   border-radius: 50%;
   width: 55px;
@@ -439,22 +447,31 @@ margin-bottom: 1rem;
 
 .contact-box p {
   font-size: 16px;
-  color: #444;
+  color: #ffff;
 }
 
 .contact-tile {
   font-weight: bold;
-  color: #007bff;
+  color: rgb(236, 233, 4);
 }
 
 #msg-box p {
   font-size: 26px;
-  color: #444;
+  color: rgb(250, 248, 248);
 }
 
 #contact-form input[type="text"], #contact-form textarea {
   margin-bottom: 15px;
   border-radius: 0;
+  background-color: #ffff;
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact-form {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 5rem 10px black;
+  padding:1.3rem;
 }
 
 #contact-form .main-btn {
@@ -462,14 +479,11 @@ margin-bottom: 1rem;
   height: 50px;
 }
 
-#contact-form .main-btn:hover {
-  color: #1a7c22;
-}
 
 /* Copy */
 
 #copy-area {
-  background-color: #fffb01;
+  background-color: #0a3d30;
 }
 
 #copy-area .container {
@@ -483,7 +497,7 @@ margin-bottom: 1rem;
 
 #copy-area .container a {
   font-weight: bold;
-  color: #444;
+  color: rgb(211, 203, 203);
 }
 
 #copy-area .container a:hover {

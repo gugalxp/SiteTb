@@ -42,10 +42,10 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = '';
+$mail->Username = ;
 
 //Password to use for SMTP authentication
-$mail->Password = '';
+$mail->Password = ;
 
 //Set who the message is to be sent from
 //Note that with gmail you can only use your account address (same as `Username`)
@@ -58,7 +58,7 @@ $mail->setFrom($email, $nome);
 //$mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('', 'MENSAGEM SITE TEMPEROS');
+$mail->addAddress(, 'MENSAGEM SITE TEMPEROS');
 
 //Set the subject line
 $mail->Subject = $assunto;
@@ -88,14 +88,13 @@ if (!$mail->send()) {
     echo 'Email não enviado: ' . $mail->ErrorInfo;
 } else {
 
- header('Location: ../email-sent.html');
- exit;
-  
+      echo 'Email não enviado!';
 }
 
 }else{
 
-echo "informe o email ou a mensagem.";
+echo 'Email não enviado; Verifique se o campo nome ou mensagem estão preenchidos.';
+
 }
 
   ?>

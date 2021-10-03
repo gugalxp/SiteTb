@@ -38,9 +38,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
           <div class="navbar-nav">
             <a class="nav-item nav-link" id="home-menu" href="#">Inicio da Página</span></a>
-            <a class="nav-item nav-link" id="about-menu" href="#">Sobre o Empório</a>
+            <a class="nav-item nav-link" id="about-menu" href="#about-area">Sobre o Empório</a>
             <a class="nav-item nav-link" id="services-menu" href="#">Localização</a>
-            <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
+            <a class="nav-item nav-link" id="contact-area" href="#contact-area" data-bs-toggle="collapse" data-bs-target="#contact-area" aria-expanded="false" aria-controls="contact-area">Contato</a>
+          
           </div>
         </div>
       </nav>
@@ -111,7 +112,7 @@
                   <li><i class="fas fa-check"></i>Noz Moscada.</li>
                   <li><i class="fas fa-check"></i>Orégano</li>
                   <li><i class="fas fa-check"></i>Gengibre</li>
-                  <p style="color:rgb(241, 241, 241); margin-top:2rem; background-color: black; padding: 1rem 1rem;">E MUITO MAIS! Consulte se o tempero que você <strong>precisa</strong> tem disponível na nossa loja através do <a href="url">Nosso WhatsApp!</a> Faça a sua encomenda <a href="url"> CLICANDO AQUI!</a></p>
+                  <p style="color:rgb(241, 241, 241); margin-top:2rem;">E MUITO MAIS! Consulte se o tempero que você <strong>precisa</strong> tem disponível na nossa loja através do <a href="url">Nosso WhatsApp!</a> Faça a sua encomenda <a href="url"> CLICANDO AQUI!</a></p>
                 <br>
                   <h3 class="about-title" style="margin-bottom:1rem;">Pães quentinhos E INTEGRAIS!</h3>
                   
@@ -121,7 +122,7 @@
                     <li><i class="fas fa-check"></i>Pães INTEGRAIS recheado com QUEIJO, tomate e oregano!</li>
                     <li><i class="fas fa-check"></i>Pães INTEGRAIS recheado com QUEIJO, tomate e oregano c/ BRÓCOLIS!</li>
                     <p  style="text-align:center; margin-top:1rem;">Paça seu gosto! Encomende um pão de acordo com o que você gosta!</p>
-                    <p style="color: #007bff; padding:1rem 1rem; background:black;">Detalhe: Não trabalhamos com nada relacionado a carne de porco!</p>
+                    <p style=" text-align:center; color: red; text-transform: uppercase; font-weight: bolder; padding-top:1rem; padding-bottom:1rem; font-size: 1rem;">Detalhe: Não trabalhamos com carne de porco, nem derivados.</p>
                   </ul>
                 </div>
               </div>
@@ -131,20 +132,20 @@
           <div id="services-area">
             
             <div class="service-box">
-        <p><a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Somos especialistas!</a>
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Aceitamos encomendas!</button>
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#contact-area" aria-expanded="false" aria-controls="contact-area">Contato</button>
+        <p><a class="btn btn-colapso" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">O que Fazemos?</a>
+          <button class="btn btn-colapso" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Faça sua encomenda aqui</button>
+          <button class="btn btn-colapso" type="button" data-bs-toggle="collapse" data-bs-target="#contact-area" aria-expanded="false" aria-controls="contact-area">Contato</button>
         </p>
         <div class="row">
           <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="collapse" id="multiCollapseExample1">
               <div class="card card-body">
                 Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="collapse" id="multiCollapseExample2">
               <div class="card card-body">
                 Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
               </div>
@@ -279,12 +280,20 @@
                 <input type="text" class="form-control" placeholder="Assunto" name="assunto">
 
                 <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="mensagem"></textarea>
-                <input type="submit" class="main-btn"> 
+                <input type="submit" class="main-btn" data-bs-toggle="collapse" href="#alert-sucesso" role="button" aria-expanded="false" aria-controls="alert-sucesso"></input>
               </form>
             </div>
           </div>
       </div>
     </div>
+
+    <div class="alert alert-success collapse multi-collapse" role="alert" id="alert-sucesso">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+      <hr>
+      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+
     <div id="copy-area">
       <div class="container">
         <div class="row">
