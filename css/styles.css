@@ -1,8 +1,57 @@
 /* Gerais */
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient(180deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
+  background-image: linear-gradient(360deg,  #062920 50%, #000002 75%, #000000 100%);
 
+}
+input:focus, textarea:focus {
+
+    border: .5px solid;
+    border-color: blue !important;
+  
+  }
+
+input:invalid, textarea:invalid {
+
+    border: 1.5px solid;
+    border-color: red;
+}
+
+input:valid, textarea:valid {
+
+  border: 1.5px solid;
+  border-color: green;
+}
+
+span {
+  position:relative;
+}
+
+
+input:invalid + span::before, textarea:invalid + span::before{
+
+  content: "✖";
+  color:red;
+}
+
+input:valid + span::before, textarea:valid + span::before{
+
+  content: "✓";
+  color:green;
+}
+
+input + span::before {
+
+  position: absolute;
+  top: -46px;
+  right:-250px;
+}
+
+textarea + span::before {
+
+  position: absolute;
+  top: -140px;
+  right:-311px;
 }
 
 .row {
@@ -20,7 +69,7 @@ p, li {
 
 /* Barra de navegação */
 header, .navbar {
-  background-image: linear-gradient(180deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
+  background-image: linear-gradient(100deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
   border-bottom: 2px solid #0a3d30;
 }
 
@@ -51,9 +100,12 @@ border: 2px solid white;
   color:  rgb(236, 233, 4);
 }
 
-.navbar-brand:hover {
-  color: #FFF;
+.navbar-dark .navbar-brand:hover {
+
+  color:  rgb(236, 233, 4);
+
 }
+
 
 #navbar-links a {
   color: rgb(236, 233, 4);
@@ -179,7 +231,7 @@ text-decoration: none;
   border-left: 3px solid rgb(214, 211, 19);
   border-right: 3px solid rgb(214, 211, 19);
   padding: 10px 10px;
-  background-image: linear-gradient(180deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
+  background-color:black;
   transition: .6s;
 }
 
@@ -201,7 +253,7 @@ text-decoration: none;
 }
 
 #about-list i {
-  color: #0a3d30;
+  color: rgb(236, 233, 4);
   margin-right: 15px;
 }
 
@@ -209,7 +261,7 @@ text-decoration: none;
 
 #services-area {
 
-  background-color: #0a3d30;
+  background-color: black;
 
 }
 
@@ -424,7 +476,7 @@ border: 1px solid #1a7c22;
 
 #contact-area {
   text-align: center;
-  background-image: linear-gradient(180deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
+  background-image: linear-gradient(360deg,  #062920 50%, #000002 75%, #000000 100%);
 
 }
 
@@ -469,8 +521,8 @@ border: 1px solid #1a7c22;
 }
 
 #contact-form {
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0 0 5rem 10px black;
+  background-color: #ffff;
+  box-shadow: 0 0 2rem 10px black;
   padding:1.3rem;
 }
 
@@ -510,6 +562,22 @@ border: 1px solid #1a7c22;
 @media(max-width: 1000px) {
   
   /* geral */
+
+  
+input + span::before {
+
+  position: absolute;
+  top: -46px;
+  right:-240px;
+}
+
+textarea + span::before {
+
+  position: absolute;
+  top: -140px;
+  right:-300px;
+}
+
   .container {
     padding: 20px 0;
   }
@@ -617,6 +685,21 @@ visibility: visible;
 }
 
 @media(max-width: 627px) {
+
+  input + span::before {
+
+    position: absolute;
+    top: -46px;
+    right:-215px;
+  }
+  
+  textarea + span::before {
+  
+    position: absolute;
+    top: -140px;
+    right:-275px;
+  }
+  
   #mainSlider .carousel-caption {
     top: 22%;
     background-color: rgba(0, 0, 0, 0.507);
@@ -644,6 +727,20 @@ font-size: 15px;
 
 
 @media(max-width: 425px) {
+
+  input + span::before {
+
+    position: absolute;
+    top: -46px;
+    right:-150px;
+  }
+  
+  textarea + span::before {
+  
+    position: absolute;
+    top: -140px;
+    right:-210px;
+  }
 
   #mainSlider .carousel-caption {
   

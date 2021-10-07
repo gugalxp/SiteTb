@@ -37,11 +37,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" id="home-menu" href="#">Inicio da Página</span></a>
+            <a class="nav-item nav-link" id="home-menu" href="#mainSlider">Inicio da Página</span></a>
             <a class="nav-item nav-link" id="about-menu" href="#about-area">Sobre o Empório</a>
             <a class="nav-item nav-link" id="services-menu" href="#">Localização</a>
-            <a class="nav-item nav-link" id="contact-area" href="#contact-area" data-bs-toggle="collapse" data-bs-target="#contact-area" aria-expanded="false" aria-controls="contact-area">Contato</a>
-          
+            <a class="nav-item nav-link" id="contact-menu" href="#button-contact">Contato</a>
           </div>
         </div>
       </nav>
@@ -122,7 +121,7 @@
                     <li><i class="fas fa-check"></i>Pães INTEGRAIS recheado com QUEIJO, tomate e oregano!</li>
                     <li><i class="fas fa-check"></i>Pães INTEGRAIS recheado com QUEIJO, tomate e oregano c/ BRÓCOLIS!</li>
                     <p  style="text-align:center; margin-top:1rem;">Paça seu gosto! Encomende um pão de acordo com o que você gosta!</p>
-                    <p style=" text-align:center; color: red; text-transform: uppercase; font-weight: bolder; padding-top:1rem; padding-bottom:1rem; font-size: 1rem;">Detalhe: Não trabalhamos com carne de porco, nem derivados.</p>
+                    <p style=" text-align:center; color: red; text-transform: uppercase; font-weight: bolder; padding-top:1rem; padding-bottom:1rem;">Detalhe: Não trabalhamos com carne de porco, nem derivados.</p>
                   </ul>
                 </div>
               </div>
@@ -133,21 +132,21 @@
             
             <div class="service-box">
         <p><a class="btn btn-colapso" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">O que Fazemos?</a>
-          <button class="btn btn-colapso" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Faça sua encomenda aqui</button>
-          <button class="btn btn-colapso" type="button" data-bs-toggle="collapse" data-bs-target="#contact-area" aria-expanded="false" aria-controls="contact-area">Contato</button>
+          <button class="btn btn-colapso" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Endereço</button>
+          <button id="button-contact" class="btn btn-colapso" type="button" data-bs-toggle="collapse" data-bs-target="#contact-area" aria-expanded="false" aria-controls="contact-area">Contato</button>
         </p>
         <div class="row">
           <div class="col">
             <div class="collapse" id="multiCollapseExample1">
               <div class="card card-body">
-                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              Essa empresa foi construída afim de trazer sabor para a vida das pessoas. Sabemos que é sempre bom ter sabor no que comemos, e a certerza de que o que colocamos em nossa comida tem qualidade absoluta. Viemos afim de contribuir com o seu dia a dia. Conte conosco para dar sabor!
               </div>
             </div>
           </div>
           <div class="col">
             <div class="collapse" id="multiCollapseExample2">
               <div class="card card-body">
-                Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                Vila Edna - Guarujá / São Paulo
               </div>
             </div>
           </div>
@@ -273,25 +272,21 @@
             </div>
             <div class="col-md-6" id="contact-form">
 
-              <form action="php/enviar_email.php">
+              <form action="./php/enviar_email.php" method="POST">
 
-                <input type="text" class="form-control" placeholder="Nome" name="nome">
-                <input type="text" class="form-control" placeholder="Email" name="email">
-                <input type="text" class="form-control" placeholder="Assunto" name="assunto">
-
-                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="mensagem"></textarea>
-                <input type="submit" class="main-btn" data-bs-toggle="collapse" href="#alert-sucesso" role="button" aria-expanded="false" aria-controls="alert-sucesso"></input>
+                <input type="text" class="form-control" placeholder="Nome" name="nome" required minlength="3" maxlength="25">
+                <span></span>
+                <input type="text" class="form-control" placeholder="Email" name="email" required maxlength="50">
+                <span></span>
+                <input type="text" class="form-control" placeholder="Assunto" name="assunto" required maxlength="25">
+                <span></span>
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="mensagem" required maxlength="150"></textarea>
+                <span></span>
+                <input type="submit" class="main-btn" ></input>
               </form>
             </div>
           </div>
       </div>
-    </div>
-
-    <div class="alert alert-success collapse multi-collapse" role="alert" id="alert-sucesso">
-      <h4 class="alert-heading">Well done!</h4>
-      <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-      <hr>
-      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
     </div>
 
     <div id="copy-area">

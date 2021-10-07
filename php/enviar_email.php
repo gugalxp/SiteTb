@@ -6,12 +6,14 @@ require_once("../vendor/autoload.php");
   $email = isset($_POST['email']) ? $_POST['email'] : 'Não informado';
   $assunto = isset($_POST['assunto']) ? $_POST['assunto'] : 'Não informado';
   $mensagem = isset($_POST['mensagem']) ? $_POST['mensagem'] : 'Não informado';
-  $data = date('d/m/Y H:i:s');
+  $data_envio = date('d/m/Y');
+  $hora_envio = date('H:i:s');
+  
   
 if($email && $mensagem) {
   
 //Create a new PHPMailer instance
-$mail = new PHPMailer();
+$mail = new PHPMailer(true);
 
 //Tell PHPMailer to use SMTP
 $mail->isSMTP();
@@ -42,10 +44,10 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = ;
+$mail->Username = 'curttorock@gmail.com';
 
 //Password to use for SMTP authentication
-$mail->Password = ;
+$mail->Password = 'gugalxp500';
 
 //Set who the message is to be sent from
 //Note that with gmail you can only use your account address (same as `Username`)
@@ -58,7 +60,7 @@ $mail->setFrom($email, $nome);
 //$mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress(, 'MENSAGEM SITE TEMPEROS');
+$mail->addAddress('curttorock@gmail.com', 'MENSAGEM SITE TEMPEROS');
 
 //Set the subject line
 $mail->Subject = $assunto;
@@ -68,7 +70,8 @@ $mail->Body = "<html>
 <b>E-mail: </b>{$email}<br>
 <b>Assunto: </b>{$assunto}<br>
 <b>Mensagem: </b>{$mensagem}<br><br> 
-<b>{$data}</b>
+<b>{$data_envio}</b>
+<b>{$hora_envio}</b>
 </html>
 ";
 
@@ -84,16 +87,7 @@ $mail->Body = "<html>
 //$mail->addAttachment('images/phpmailer_mini.png');
 
 //send the message, check for errors
-if (!$mail->send()) {
-    echo 'Email não enviado: ' . $mail->ErrorInfo;
-} else {
 
-      echo 'Email não enviado!';
-}
-
-}else{
-
-echo 'Email não enviado; Verifique se o campo nome ou mensagem estão preenchidos.';
 
 }
 
