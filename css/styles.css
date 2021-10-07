@@ -227,9 +227,7 @@ text-decoration: none;
   font-size: 40px;
   text-align: center;
   font-weight: bolder;
-  border-bottom: 3px solid rgb(214, 211, 19);
-  border-left: 3px solid rgb(214, 211, 19);
-  border-right: 3px solid rgb(214, 211, 19);
+  border: 3px solid rgb(214, 211, 19);
   padding: 10px 10px;
   background-color:black;
   transition: .6s;
@@ -483,7 +481,7 @@ border: 1px solid #1a7c22;
 .contact-box {
   padding-bottom: 50px;
   margin-bottom: 50px;
-  border-bottom: 1px solid #1a7c22;
+  border-bottom: 1px solid rgb(214, 211, 19);
 }
 
 .contact-box i {
@@ -732,14 +730,14 @@ font-size: 15px;
 
     position: absolute;
     top: -46px;
-    right:-150px;
+    right:-155px;
   }
   
   textarea + span::before {
   
     position: absolute;
     top: -140px;
-    right:-210px;
+    right:-215px;
   }
 
   #mainSlider .carousel-caption {
