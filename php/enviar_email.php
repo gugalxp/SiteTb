@@ -61,7 +61,7 @@ $mail->setFrom($email, $nome);
 //$mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('curttorock@gmail.com', 'MENSAGEM SITE TEMPEROS');
+$mail->addAddress('', 'MENSAGEM SITE TEMPEROS');
 
 //Set the subject line
 $mail->Subject = $assunto;
