@@ -46,10 +46,12 @@
       </nav>
     </div>
   </header>
+  
   <main>
     <div class="container-fluid">
       <!-- slider -->
       <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        
         <ol class="carousel-indicators">
           <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
           <li data-target="#mainSlider" data-slide-to="1"></li>
@@ -272,16 +274,24 @@
             </div>
             <div class="col-md-6" id="contact-form">
 
-              <form action="./php/enviar_email.php" method="POST">
+              <form action="https://api.staticforms.xyz/submit" method="POST">
 
-                <input type="text" class="form-control" placeholder="Nome" name="nome" required minlength="3" maxlength="25">
+                <input type="hidden" name="accessKey" value="cab7b3e5-c8a0-4371-8441-602289c81be2"> <!-- Required -->
+
+
+                <input type="text" class="form-control" placeholder="Nome" name="name" required minlength="3" maxlength="25">
                 <span></span>
-                <input type="text" class="form-control" placeholder="Email" name="email" required maxlength="50">
+                <input type="email" class="form-control" placeholder="Email" name="email" required maxlength="50">
                 <span></span>
-                <input type="text" class="form-control" placeholder="Assunto" name="assunto" required maxlength="25">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject" required maxlength="25">
                 <span></span>
-                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="mensagem" required maxlength="150"></textarea>
+                <input type="number"  class="form-control"  placeholder="Telefone" name="phone" required  maxlength="13"> <!-- Optional -->
                 <span></span>
+
+                <textarea class="form-control" maxrows="4" minrows="4" rows="4" cols="50" placeholder="Sua mensagem ou o seu pedido..." name="message" required maxlength="150"></textarea>
+                <span></span>
+                <input type="hidden" name="redirectTo" value="https://gustavoarrudaprogramador.com/php/email_enviado.html"> <!-- Optional -->
+
                 <input type="submit" class="main-btn" ></input>
               </form>
             </div>

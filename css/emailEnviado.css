@@ -1,0 +1,92 @@
+body{
+
+    background-image: linear-gradient(180deg,  #091613 50%, #000002 75%, #000000 100%);
+}
+
+.alert {   
+
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 4rem;
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: bold;
+    font-size: 1.2rem;
+    padding:2rem;
+}
+
+.main-title {
+
+    color: white;
+    margin-top:5rem;
+}
+
+
+  
+  .contact-box {
+    margin-bottom: 50px;
+    margin-top: 3rem;
+  }
+  
+  .contact-box i {
+    color: white;
+    border: solid 1px white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-left: 200px;
+  }
+  
+  
+  .contact-box p {
+    font-size: 16px;
+    color: #ffff;
+    text-align: center;
+  }
+  
+  .contact-tile {
+    font-weight: bold;
+    color: rgb(2, 167, 16);
+  }
+  
+
+  #copy-area {
+    background-color: #eee;
+    padding: 2.6rem;
+    padding-top: -3.7rem;
+    
+  }
+  
+  #copy-area .container {
+    text-align: center;
+  }
+  
+  #copy-area .container p {
+    margin-bottom: 0;
+    color: #000;
+    font-weight: bolder;
+    font-size: 19px;
+  }
+  
+  #copy-area .container a {
+    font-weight: bold;
+    color: #00a023;
+    font-size: 1.2rem;
+  }
+  
+  #copy-area .container a:hover {
+    text-decoration: none;
+  }
+
+
+  @media(max-width: 425px) {
+  
+    .alert {   
+   
+        margin-top:3rem;
+
+    }
+
+}

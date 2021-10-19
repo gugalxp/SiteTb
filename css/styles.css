@@ -1,9 +1,23 @@
 /* Gerais */
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient(360deg,  #062920 50%, #000002 75%, #000000 100%);
-
+  background-image: linear-gradient(180deg,  #091613 50%, #000002 100%, #000000 100%);
+    
 }
+
+body::-webkit-scrollbar {
+  width: 13px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(236, 233, 4);       /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:  #062920;   /* color of the scroll thumb */
+  border: 1px solid rgb(236, 233, 4);  /* creates padding around scroll thumb */
+}
+
 input:focus, textarea:focus {
 
     border: .5px solid;
@@ -69,8 +83,7 @@ p, li {
 
 /* Barra de navegação */
 header, .navbar {
-  background-image: linear-gradient(100deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
-  border-bottom: 2px solid #0a3d30;
+  background-image: linear-gradient(360deg,  #000000 50%, #000002 75%, #000000 100%);
 }
 
 #nav-container {
@@ -161,12 +174,12 @@ transform: scale(.9);
 }
 
 #mainSlider .carousel-caption {
-  top: 30%;
+  top: 20%;
   background-color: rgba(0, 0, 0, 0.507);
-  bottom: 3rem;
+  bottom: 4rem;
   padding: 2rem;
   box-shadow: 0 0 5rem 20px black;
- border: 1px solid linear-gradient(180deg, #168569 0, #135746 25%, #0a3d30 50%, #000002 75%, #000000 100%);
+  
 
 }
 
@@ -177,7 +190,7 @@ transform: scale(.9);
   color: rgb(214, 211, 19);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bolder;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 
 #mainSlider .carousel-caption p {
@@ -272,11 +285,11 @@ text-decoration: none;
 .btn-colapso{
 background-color: rgb(10, 61, 48);
 font-size: 18px;
-justify-content: space-evenly;
+justify-content: space-around;
 margin-top: 1rem;
+margin-right: .3rem;
 color: rgb(236, 233, 4);
 border: 1px solid #1a7c22;
-
 
 }
 
@@ -474,7 +487,7 @@ border: 1px solid #1a7c22;
 
 #contact-area {
   text-align: center;
-  background-image: linear-gradient(360deg,  #062920 50%, #000002 75%, #000000 100%);
+  background-image: linear-gradient(360deg,  #091613 50%, #000002 75%, #000000 100%);
 
 }
 
@@ -517,16 +530,35 @@ border: 1px solid #1a7c22;
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
 }
+#contact-form input[type="email"], #contact-form textarea {
+  margin-bottom: 15px;
+  border-radius: 0;
+  background-color: #ffff;
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact-form input[type="number"], #contact-form textarea {
+  margin-bottom: 15px;
+  border-radius: 0;
+  background-color: #ffff;
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 #contact-form {
-  background-color: #ffff;
-  box-shadow: 0 0 2rem 10px black;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 2rem 3px black;
+  border: 3px solid rgb(21, 46, 27);
   padding:1.3rem;
+  padding-top: 4rem;
 }
 
 #contact-form .main-btn {
   width: 120px;
   height: 50px;
+  margin-top: 1rem;
 }
 
 
@@ -726,6 +758,11 @@ font-size: 15px;
 
 @media(max-width: 425px) {
 
+  .main-title {
+
+  margin-top: 3rem ;
+  
+  }
   input + span::before {
 
     position: absolute;
